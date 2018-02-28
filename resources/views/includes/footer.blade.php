@@ -1,1 +1,5 @@
-<p>fut fut fut this is Fuu-ter!!</p>
+  <div class="grid full-wraper">
+    <div class="row">
+      <p class="text-center uppercase">Footer!</p>
+    </div>
+  </div>
