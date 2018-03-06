@@ -11,22 +11,22 @@
         </div>
     </div>
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12">
-      <a href="#">
         <div class="thumbnail">
-          <img alt="Entry1" class="img-responsive" src="/contents/img/newyork.jpg">
-          <h3 class="text-center uppercase">Entry 1</h3>
-          <p class="text-center">SpaceTeam bootstrapping user centered design sticky note convergence fund </p>
-        </div>
-      </a>
+          <a href="#">
+            <img alt="Entry1" class="img-responsive" src="/contents/img/newyork.jpg">
+            <h3 class="text-center uppercase">Entry 1</h3>
+          </a>
+            <p class="text-center">SpaceTeam bootstrapping user centered design sticky note convergence fund </p>
+          </div>
     </div>
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12">
-      <a href="#">
         <div class="thumbnail">
-          <img alt="Entry1" class="img-responsive" src="/contents/img/paris.jpg">
-          <h3 class="text-center uppercase">Entry 2</h3>
+          <a href="#">
+            <img alt="Entry1" class="img-responsive" src="/contents/img/paris.jpg">
+            <h3 class="text-center uppercase">Entry 2</h3>
+          </a>
           <p class="text-center">SpaceTeam bootstrapping user centered design sticky note convergence fund </p>
         </div>
-      </a>
     </div>
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12">
       <a href="#">
@@ -49,23 +49,6 @@
           </div>
         </a>
       </div>
-      <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12">
-        <a href="#">
-          <div class="thumbnail">
-            <img alt="Entry1" class="img-responsive" src="/contents/img/paris.jpg">
-            <h3 class="text-center uppercase">Entry 2</h3>
-            <p class="text-center">SpaceTeam bootstrapping user centered design sticky note convergence fund </p>
-          </div>
-        </a>
-      </div>
-      <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12">
-        <a href="#">
-          <div class="thumbnail">
-            <img alt="Entry1" class="img-responsive" src="/contents/img/sanfrancisko.jpg">
-            <h3 class="text-center uppercase">Entry 3</h3>
-            <p class="text-center">SpaceTeam bootstrapping user centered design sticky note convergence fund </p>
-          </div>
-        </a>
-      </div>
+
 </section>
 @stop

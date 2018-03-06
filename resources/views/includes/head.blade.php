@@ -7,15 +7,19 @@
 
 <title>{{ $meta_title or '...' }}</title>
 
-<!-- Custom styles for this template -->
-<link href="{{ asset('contents/css/style.css') }}" rel="stylesheet" type="text/css" >
-<link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Play" rel="stylesheet">
 
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 <!-- Bootstrap CSS -->
-<!-- <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet"> -->
+<!-- <link href="{{ asset('contents/css/bootstrap.css') }}" rel="stylesheet"> -->
+
+
+<!-- Custom styles for this template -->
+<link href="{{ asset('contents/css/navigation.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('contents/css/style.css') }}" rel="stylesheet" type="text/css" >
+<link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('contents/css/responsive.css') }}" rel="stylesheet" type="text/css">
