@@ -5,7 +5,7 @@
 <meta name="author" content="">
 
 
-<title>{{ $meta_title or '...' }}</title>
+<title>{{ $meta_title or 'Klausykla Blog' }}</title>
 
 
 <!-- Google Fonts -->
@@ -19,7 +19,7 @@
 
 
 <!-- Custom styles for this template -->
-<link href="{{ asset('contents/css/navigation.css') }}" rel="stylesheet" type="text/css">
-<link href="{{ asset('contents/css/style.css') }}" rel="stylesheet" type="text/css" >
-<link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('contents/css/responsive.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('contents/css/style.css') }}" rel="stylesheet" type="text/css" >
+<link href="{{ asset('contents/css/navigation.css') }}" rel="stylesheet" type="text/css">

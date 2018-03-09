@@ -5,7 +5,7 @@
               <nav class="clearfix full-wrapper">
                 <div id="navbar" class="text-center">
                   <ul>
-                    <li><a href='#'>Home</a></li>
+                    <li><a href='#intro'>Home</a></li>
                     <li><a href='#blog'>News</a></li>
                     <li class='active'><a href='#'><i class="fab fa-odnoklassniki"></i> Admin Panel</a>
                       <ul class="">
@@ -15,7 +15,7 @@
                         <li><a href='#'>Sign Out</a></li>
                       </ul>
                     </li>
-                   <li><a href='#'>Suggest!</a></li>
+                   <li><a href='#suggest'>Suggest!</a></li>
                    <li><a href='#' class="auth-btn"><i class="far fa-arrow-alt-circle-right"></i> Register</a></li>
                    <li><a href='#' class="auth-btn"><i class="fas fa-lock"></i> Sign In</a></li>
                  </ul>
@@ -32,7 +32,7 @@
             <div class="row">
               <div class="col md-6-12 md-push-left-3-12">
                 <h1 class="text-center bold">Blog</h1>
-                <h2 class="text-center">Music Blog for electronic music enthusiasts</h2>
+                <h2 class="text-center">Haters gonna say it's fake</h2>
                 <!-- <div class="spacer-box"></div> -->
               </div>
             </div>

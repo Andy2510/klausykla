@@ -1,8 +1,4 @@
 /******* BEGINNING OF GRID  ******/
-/* * {
-  box-sizing: border-box;
-  outline: none;
-} */
 
 .fl-left {
   float: left; }
@@ -76,6 +72,10 @@
 .grid .row {
   margin-left: -20px;
   margin-right: -20px;
+}
+
+main .row {
+    margin-bottom: 60px;
 }
 
 .grid .row:before, .grid .row:after {
