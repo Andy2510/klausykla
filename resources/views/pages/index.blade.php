@@ -14,17 +14,19 @@
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12 entry">
       <a href="#">
         <div class="thumbnail">
-          <img src="/contents/img/newyork.jpg" alt="Entry1" class="entry-img">
+          <img src="/contents/img/pexels.jpeg" alt="Entry1">
           <div class="bottom-left entry-date">2018-03-09</div>
           <div class="bottom-right entry-controlls">
             <i class="fas fa-share"></i>
             <i class="fas fa-heart"></i>
           </div>
         </div>
-        <div class="entry-title bold text-center">Title</div>
+        <div class="entry-title bold text-center">
+          <h3>Title</h3>
+        </div>
       </a>
-      <div class="entry-desc justified">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+      <div class="entry-desc">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
       </div>
     </div>
 

@@ -16,4 +16,9 @@ class RouteController extends Controller
     return view('pages/suggest');
   }
 
+  public function showEntry()
+  {
+    return view('pages/entry');
+  }
+
 }

@@ -23,3 +23,4 @@
 <link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('contents/css/style.css') }}" rel="stylesheet" type="text/css" >
 <link href="{{ asset('contents/css/navigation.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('contents/css/entry.css') }}" rel="stylesheet" type="text/css">

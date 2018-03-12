@@ -16,3 +16,4 @@
 Route::get('/', 'RouteController@index')->name('index');
 Route::get('/index', 'RouteController@index')->name('index');
 Route::get('/suggest', 'RouteController@suggestIndex')->name('suggest');
+Route::get('/entry', 'RouteController@showEntry')->name('entry');

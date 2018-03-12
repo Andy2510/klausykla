@@ -30,12 +30,12 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
+        <!-- Bootstrap JavaScript -->
+        <script src="{{ asset('contents/js/bootstrap.js') }}"></script>
 
       <!-- My Custom JavaScript -->
       <script src="{{ asset('contents/js/script.js') }}"></script>
 
-      <!-- Bootstrap JavaScript -->
-      <script src="{{ asset('contents/js/bootstrap.js') }}"></script>
 
     </body>
 

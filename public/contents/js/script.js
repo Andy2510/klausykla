@@ -1,3 +1,16 @@
+// $(document).ready(function() {
+//
+//     // smooth scroll. begin.
+//     $('html, body').animate({
+//       scrollTop: $(hash).offset().top
+//     }, 900, function(){
+//     // smooth scroll. end.
+//
+//     window.location.hash = hash;
+//     });
+//   });
+
+
 (function($) {
 
   $.fn.menumaker = function(options) {
