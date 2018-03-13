@@ -35,10 +35,6 @@
   outline: none;
   cursor: pointer;
   border: solid 2px #e14658;
-  /* border-top: none; */
-  }
-
-.entry-btns a {
   background-color: inherit;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -46,7 +42,8 @@
   -ms-transition: all 0.3s ease-in-out;
 }
 
-.entry-btns a:hover {
+.entry-btns a:hover,
+.submit-auth-btn:hover {
   color: #e2dedb;
   background-color: #e14658;
 }

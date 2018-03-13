@@ -5,9 +5,14 @@
               <nav class="clearfix full-wrapper">
                 <div id="navbar" class="text-center">
                   <ul>
-                    <li><a href='#intro'>Home</a></li>
+                  @guest
+                    <li><a href='{{ route('index') }}'>Home</a></li>
                     <li><a href='#blog'>News</a></li>
-                    <li class='active'><a href='#'><i class="fab fa-odnoklassniki"></i> Admin Panel</a>
+                  @endguest
+
+                  @if (Auth::check())
+                    <li class='active'>
+                      <a href='#'><i class="fab fa-odnoklassniki"></i> Admin Panel</a>
                       <ul class="">
                         <li><a href='#'>Create New Entry</a></li>
                         <li><a href='#'>Edit Entries</a></li>
@@ -15,9 +20,21 @@
                         <li><a href='#'>Sign Out</a></li>
                       </ul>
                     </li>
+                  @endif
+
+                  @guest
                    <li><a href='#suggest'>Suggest!</a></li>
-                   <li><a href='#' class="auth-btn"><i class="far fa-arrow-alt-circle-right"></i> Register</a></li>
-                   <li><a href='#' class="auth-btn"><i class="fas fa-lock"></i> Sign In</a></li>
+                   <li><a href='{{ route('register') }}' class="auth-btn"><i class="far fa-arrow-alt-circle-right"></i> Register</a></li>
+                   <li><a href='{{ route('login') }}' class="auth-btn"><i class="fas fa-lock"></i> Sign In</a></li>
+                  @endguest
+
+                  @if (Auth::check())
+                    <li>
+                      <a class="auth-btn" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                           document.getElementById('logout-form').submit();"
+                  ><i class="fas fa-lock"></i> Sign Out</a></li>
+                  @endif
                  </ul>
                </div>
               </nav>

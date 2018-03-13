@@ -8,6 +8,7 @@
       <div class="entry-title_int bold uppercase text-center">
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
       </div>
+      
 
       <div class="entry-img_int text-center">
         <img src="/contents/img/pexels.jpeg" alt="Entry1">

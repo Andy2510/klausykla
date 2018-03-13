@@ -492,6 +492,10 @@ textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
+label {
+  display: block;
+}
+
 #form {
   position: relative;
   width: 100%;
