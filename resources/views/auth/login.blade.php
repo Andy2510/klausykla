@@ -40,10 +40,6 @@
       <button type="submit" class="submit-auth-btn uppercase bold push-right">Sign In</button>
     </div>
 
-    <!-- <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
-      <button class="social-signin facebook">Log in with facebook</button>
-    </div> -->
-
     <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
       <a class="submit-auth-btn btn-forgot uppercase bold" href="{{ route('password.request') }}">
           {{ __('Forgot Your Password?') }}

@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="entry-title bold text-center">
-          <h3>Title</h3>
+          <h4>Title</h4>
         </div>
       </a>
       <div class="entry-desc">

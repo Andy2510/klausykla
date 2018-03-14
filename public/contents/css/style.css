@@ -213,8 +213,8 @@ td, th {
 }
 
 .ver-p {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .center-block {
@@ -375,8 +375,8 @@ header nav ul li a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.entry-title h3 {
-  font-size: 2.5em;
+.entry-title h4 {
+  font-size: 1.75em;
   color: #22252c;
   margin: 0 auto;
 }

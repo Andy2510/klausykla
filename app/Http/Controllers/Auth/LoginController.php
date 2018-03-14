@@ -36,4 +36,10 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    // findss the name column in 'users' table and log the user in according to it
+    public function username()
+    {
+      return 'name';
+    }
 }

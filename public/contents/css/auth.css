@@ -152,3 +152,8 @@ button.social-signin.google {
   margin: 0;
   font-size: 12px;
 }
+
+.status-bar h6 {
+  color: #3F3250;
+  margin: 0;
+}
