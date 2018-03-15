@@ -17,7 +17,8 @@
                     <li><a href='{{ route('index') }}'>Home</a></li>
                     <li><a href='#blog'>News</a></li>
 
-                    <!-- <li class='active'>
+                    @if(Auth::check() && Auth::user()->isAdmin())
+                    <li class='active'>
                       <a href='#'><i class="fab fa-odnoklassniki"></i> Admin Panel</a>
                       <ul class="">
                         <li><a href='#'>Create New Entry</a></li>
@@ -25,7 +26,8 @@
                         <li><a href='#'>Userlist</a></li>
                         <li><a href='#'>Sign Out</a></li>
                       </ul>
-                    </li> -->
+                    </li>
+                    @endif
 
                   <li><a href='#suggest'>Suggest!</a></li>
 
@@ -38,7 +40,8 @@
                   <li class='active'>
                   <a href='#'><i class="fas fa-user"></i> {{ Auth::user()->name }}</a>
                   <ul class="">
-                    <li><a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                    <!-- <li><a href="{{ route('editUser') }}">Edit My Profile</a></li> -->
+                    <li><a href="{{ route('logout') }}"><i class="fas fa-lock-open"></i> Sign Out</a></li>
                   </ul>
                 </li>
                   @endif
