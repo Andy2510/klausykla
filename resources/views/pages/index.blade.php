@@ -14,7 +14,7 @@
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12 entry">
       <a href="#">
         <div class="thumbnail">
-          <img src="/contents/img/pexels.jpeg" alt="Entry1">
+          <img src="/contents/img/owens.jpg" alt="Entry1">
           <div class="bottom-left entry-date">2018-03-09</div>
           <div class="bottom-right entry-controlls">
             <i class="fas fa-share"></i>
