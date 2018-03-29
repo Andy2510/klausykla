@@ -8,10 +8,10 @@
 
     <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
 
-      {!! Form::open(['url' => 'createEntry', 'files' => true]) !!}
+      {!! Form::open(['url' => 'storeEntry', 'files' => true]) !!}
 
       {!! Form::label('title', 'Entry Title', ['class' => 'reg-form-label']) !!}
-      {!! Form::text(old('title'), 'Entry title', array('class' => 'reg-form-input')) !!}
+      {!! Form::text('title', 'Entry title', array('class' => 'reg-form-input', 'name' => old('title'))) !!}
         @if ($errors->has('title'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('title') }}</p>
@@ -19,10 +19,10 @@
         @endif
 
         {!! Form::label('date', 'Entry Date', ['class' => 'reg-form-label']) !!}
-        {!! Form::date('name', \Carbon\Carbon::now(), array('class' => 'reg-form-input')) !!}
+        {!! Form::date('date', \Carbon\Carbon::now(), array('class' => 'reg-form-input')) !!}
 
         {!! Form::label('description', 'Entry Description', ['class' => 'reg-form-label']) !!}
-        {!! Form::textarea(old('description'), ' ', array('class' => 'reg-form-textarea')) !!}
+        {!! Form::textarea('description', ' ', array('class' => 'reg-form-textarea', 'name' => old('description'))) !!}
         @if ($errors->has('description'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('description') }}</p>
@@ -31,7 +31,7 @@
 
 
         {!! Form::label('imageUrl', 'Entry Photo', ['class' => 'reg-form-label']) !!}
-        {!! Form::file('imageUrl', ['class' => 'reg-form-input']) !!}
+        {!! Form::file('imageUrl', ['class' => 'reg-form-input', 'name' => 'imageUrl']) !!}
         @if ($errors->has('imageUrl'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('imageUrl') }}</p>
