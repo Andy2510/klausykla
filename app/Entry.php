@@ -2,8 +2,8 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Helpers\PhotoHelper;
+use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 use Collective\Html\Eloquent\FormAccessible;
 
@@ -15,6 +15,7 @@ class Entry extends Model
     'title',
     'date',
     'description',
+    'trackUrl',
     'imageUrl'
   ];
 

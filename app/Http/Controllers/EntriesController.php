@@ -53,6 +53,7 @@ class EntriesController extends Controller
       'title' => $request->get('title'),
       'date' => $request->get('date'),
       'description' => $request->get('description'),
+      'trackUrl' => $request->get('trackUrl'),
       'imageUrl' => $path
       ];
 
@@ -114,7 +115,8 @@ class EntriesController extends Controller
             'title' => 'required|string|max:200',
             'date' => 'required|date',
             'description' => 'required|string|max:2000',
-            'imageUrl' => 'required|mimes:jpeg,jpg,bmp,png|max:10000'
+            'trackUrl' => 'required|string',
+            'imageUrl' => 'required|image|mimes:jpeg,jpg,bmp,png|max:5128'
           ]);
     }
 }

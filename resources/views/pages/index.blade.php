@@ -11,6 +11,7 @@
         </div>
 
     </div>
+    
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12 entry">
       <a href="#">
         <div class="thumbnail">

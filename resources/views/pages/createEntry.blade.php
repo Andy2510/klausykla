@@ -8,7 +8,7 @@
 
     <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
 
-      {!! Form::open(['url' => 'storeEntry', 'files' => true]) !!}
+      {!! Form::open(['url' => 'storeEntry', 'files' => true, 'action' => 'EntriesController@store']) !!}
 
       {!! Form::label('title', 'Entry Title', ['class' => 'reg-form-label']) !!}
       {!! Form::text('title', old('title'), array('class' => 'reg-form-input', 'name' => 'title')) !!}
@@ -29,9 +29,17 @@
         </span>
         @endif
 
+        {!! Form::label('trackUrl', 'Track URL', ['class' => 'reg-form-label']) !!}
+        {!! Form::text('trackUrl', old('trackUrl'), array('class' => 'reg-form-input', 'name' => 'trackUrl')) !!}
+          @if ($errors->has('trackUrl'))
+          <span class="invalid-feedback">
+            <p class="validation-p text-center bold">{{ $errors->first('trackUrl') }}</p>
+          </span>
+          @endif
+
 
         {!! Form::label('imageUrl', 'Entry Photo', ['class' => 'reg-form-label']) !!}
-        {!! Form::file('imageUrl', ['class' => 'reg-form-input', 'name' => 'imageUrl']) !!}
+        {!! Form::file('imageUrl', ['class' => 'reg-form-input']) !!}
         @if ($errors->has('imageUrl'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('imageUrl') }}</p>

@@ -18,6 +18,7 @@ class CreateEntriesTable extends Migration
           $table->string('title');
           $table->string('date');
           $table->string('description');
+          $table->string('trackUrl');
           $table->string('imageUrl');
           $table->timestamps();
       });
