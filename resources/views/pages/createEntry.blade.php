@@ -11,7 +11,7 @@
       {!! Form::open(['url' => 'storeEntry', 'files' => true]) !!}
 
       {!! Form::label('title', 'Entry Title', ['class' => 'reg-form-label']) !!}
-      {!! Form::text('title', 'Entry title', array('class' => 'reg-form-input', 'name' => old('title'))) !!}
+      {!! Form::text('title', old('title'), array('class' => 'reg-form-input', 'name' => 'title')) !!}
         @if ($errors->has('title'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('title') }}</p>
@@ -22,7 +22,7 @@
         {!! Form::date('date', \Carbon\Carbon::now(), array('class' => 'reg-form-input')) !!}
 
         {!! Form::label('description', 'Entry Description', ['class' => 'reg-form-label']) !!}
-        {!! Form::textarea('description', ' ', array('class' => 'reg-form-textarea', 'name' => old('description'))) !!}
+        {!! Form::textarea('description', old('description'), array('class' => 'reg-form-textarea', 'name' => 'description')) !!}
         @if ($errors->has('description'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('description') }}</p>

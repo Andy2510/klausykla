@@ -114,7 +114,7 @@ class EntriesController extends Controller
             'title' => 'required|string|max:200',
             'date' => 'required|date',
             'description' => 'required|string|max:2000',
-            'imageUrl' => 'required|mimes:jpeg,bmp,png|max:10000'
+            'imageUrl' => 'required|mimes:jpeg,jpg,bmp,png|max:10000'
           ]);
     }
 }
