@@ -10,19 +10,19 @@
 
       {!! Form::open(['url' => 'createEntry', 'files' => true]) !!}
 
-      {!! Form::label('Entry Title') !!}
-      {!! Form::text('title', old('title'), 'Entry title', array('class' => 'reg-form')) !!}
+      {!! Form::label('title', 'Entry Title', ['class' => 'reg-form-label']) !!}
+      {!! Form::text(old('title'), 'Entry title', array('class' => 'reg-form-input')) !!}
         @if ($errors->has('title'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('title') }}</p>
         </span>
         @endif
 
-        {!! Form::label('Entry Date') !!}
-        {!! Form::date(\Carbon\Carbon::now()) !!}
+        {!! Form::label('date', 'Entry Date', ['class' => 'reg-form-label']) !!}
+        {!! Form::date('name', \Carbon\Carbon::now(), array('class' => 'reg-form-input')) !!}
 
-        {!! Form::label('Entry Description') !!}
-        {!! Form::textarea('description', old('description'), 'Describe what entry is about') !!}
+        {!! Form::label('description', 'Entry Description', ['class' => 'reg-form-label']) !!}
+        {!! Form::textarea(old('description'), ' ', array('class' => 'reg-form-textarea')) !!}
         @if ($errors->has('description'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('description') }}</p>
@@ -30,8 +30,8 @@
         @endif
 
 
-        {!! Form::label('Entry Photo') !!}
-        {!! Form::file('imageUrl') !!}
+        {!! Form::label('imageUrl', 'Entry Photo', ['class' => 'reg-form-label']) !!}
+        {!! Form::file('imageUrl', ['class' => 'reg-form-input']) !!}
         @if ($errors->has('imageUrl'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('imageUrl') }}</p>

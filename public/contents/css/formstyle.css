@@ -1,0 +1,96 @@
+.submit-auth-btn {
+  padding: 15px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  color: #22252c;
+  outline: none;
+  cursor: pointer;
+  border: solid 2px #e14658;
+  background-color: inherit;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-forgot {
+  padding: 5px;
+  font-size: 10px;
+  background-color: #3F3250;
+  color: #FFF;
+  border: none;
+}
+
+.btn-forgot:hover {
+  color: #e2dedb;
+}
+
+.reg-form-input {
+  font-size: 0.875em;
+  height: 35px;
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #22252c;
+}
+
+.reg-form-input:hover {
+  background: white;
+  color: #22252c;
+}
+
+.reg-form-input:visited {
+  background-color: #C0B3A0;
+}
+
+.reg-form-input::placeholder {
+  color: #3F3250;
+}
+
+.reg-form-input::placeholder:hover {
+  color: #3F3250;
+}
+
+.reg-form-label {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.reg-form .checkbox {
+  display: inline;
+  -webkit-appearance: checkbox;
+}
+
+.reg-form-textarea {
+  background: transparent;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #22252c;
+}
+
+.reg-form-textarea:hover {
+  background: white;
+  color: #22252c;
+}
+
+.remember {
+  display: inline;
+}
+
+.validation-p {
+  color: red;
+  margin: 0;
+  font-size: 12px;
+}
+
+.status-bar h6 {
+  color: #3F3250;
+  margin: 0;
+}
