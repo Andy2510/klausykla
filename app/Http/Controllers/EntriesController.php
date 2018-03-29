@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Entry;
+use App\Helpers\PhotoHelper;
 
 class EntriesController extends Controller
 {
+    private $photoHelper;
 
-    public function __construct() {
+    public function __construct(PhotoHelper $photoHelper) {
          $this->middleware('isAdmin')->except('index');
+         $this->photoHelper = $photoHelper;
      }
     /**
      * Display a listing of the resource.
@@ -48,7 +51,7 @@ class EntriesController extends Controller
 
       $post = [
       'title' => $request->get('title'),
-      'date' => $request->get('price'),
+      'date' => $request->get('date'),
       'description' => $request->get('description'),
       'imageUrl' => $path
       ];
@@ -109,9 +112,9 @@ class EntriesController extends Controller
     {
         return $data->validate([
             'title' => 'required|string|max:200',
-            'date' => 'required|string|max:255',
-            'description' => 'required|string|max:1000',
-            'imageUrl' => 'required|mimes:jpeg,bmp,png|max:6000'
+            'date' => 'required|date',
+            'description' => 'required|string|max:2000',
+            'imageUrl' => 'required|mimes:jpeg,jpg,bmp,png|max:10000'
           ]);
     }
 }

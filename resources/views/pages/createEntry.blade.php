@@ -10,8 +10,8 @@
 
       {!! Form::open(['url' => 'createEntry', 'files' => true]) !!}
 
-      {!! Form::label('Title') !!}
-      {!! Form::text('title', 'Entry title') !!}
+      {!! Form::label('Entry Title') !!}
+      {!! Form::text('title', old('title'), 'Entry title', array('class' => 'reg-form')) !!}
         @if ($errors->has('title'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('title') }}</p>
@@ -22,7 +22,7 @@
         {!! Form::date(\Carbon\Carbon::now()) !!}
 
         {!! Form::label('Entry Description') !!}
-        {!! Form::textarea('description', 'Describe what entry is about') !!}
+        {!! Form::textarea('description', old('description'), 'Describe what entry is about') !!}
         @if ($errors->has('description'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('description') }}</p>

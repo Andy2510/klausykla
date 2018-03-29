@@ -1,19 +1,4 @@
-/* label {
-  text-align: center;
-} */
-
-.or {
-  height: 40px;
-  width: 50px;
-  margin: 0 auto;
-  background: #DDD;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  line-height: 40px;
-  text-align: center;
-}
-
-.right {
+/* .right {
   position: absolute;
   top: 0;
   right: 0;
@@ -72,7 +57,7 @@ button.social-signin.twitter {
 
 button.social-signin.google {
   background: #DD4B39;
-}
+} */
 
 .submit-auth-btn {
   padding: 15px;
