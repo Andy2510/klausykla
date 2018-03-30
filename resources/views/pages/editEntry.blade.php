@@ -8,7 +8,7 @@
 
     <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
 
-      {!! Form::open(array('url' => 'entry_update')) !!}
+      {!! Form::open(['route' => ['entry_update', $entry->id], 'files' => true]) !!}
 
       {!! Form::label('title', 'Entry Title', ['class' => 'reg-form-label']) !!}
       {!! Form::text(old('title'), $entry->title, array('class' => 'reg-form-input', 'name' => 'title')) !!}

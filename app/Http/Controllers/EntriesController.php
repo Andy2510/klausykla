@@ -104,15 +104,15 @@ class EntriesController extends Controller
       $path = $request->file('imageUrl')->storePublicly('public/photos');
 
       $post = [
-        'title' => 'required|string|max:200',
-        'date' => 'required|date',
-        'description' => 'required|string|max:2000',
-        'trackUrl' => 'required|string',
-        'imageUrl' => 'required|image|mimes:jpeg,jpg,bmp,png|max:5128'
+        'title' => $request->get('title'),
+        'description' => $request->get('description'),
+        'date' => $request->get('date'),
+        'trackUrl' => $request->get('trackUrl'),
+        'imageUrl' => $path
       ];
 
       $entry = Entry::findOrFail($id);
-      $this->deletePhotoFromFS($dish);
+      $this->deleteOneFromFileSystem($entry);
       $entry->update($post);
       return redirect()->to('/index');
     }
