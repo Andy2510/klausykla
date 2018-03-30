@@ -23,7 +23,7 @@ class EntriesController extends Controller
     {
       $entries = Entry::get();
 
-       return view('index', [
+       return view('pages.index', [
            'entries' => $entries
        ]);
     }
@@ -70,9 +70,10 @@ class EntriesController extends Controller
      */
     public function show($id)
     {
-      if(Auth::user()->isAdmin()){
-       $orders = Entry::get();
-      }
+      $entries = Entry::findOrFail($id);
+      return view('pages.entry', [
+        'entry' => $entries
+      ]);
     }
 
     /**
