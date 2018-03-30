@@ -84,7 +84,10 @@ class EntriesController extends Controller
      */
     public function edit($id)
     {
-        //
+      $entry = Entry::findOrFail($id);
+      return view('pages.editEntry', [
+        'entry' => $entry
+      ]);
     }
 
     /**
@@ -96,7 +99,22 @@ class EntriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $this->validator($request);
+
+      $path = $request->file('imageUrl')->storePublicly('public/photos');
+
+      $post = [
+        'title' => 'required|string|max:200',
+        'date' => 'required|date',
+        'description' => 'required|string|max:2000',
+        'trackUrl' => 'required|string',
+        'imageUrl' => 'required|image|mimes:jpeg,jpg,bmp,png|max:5128'
+      ];
+
+      $entry = Entry::findOrFail($id);
+      $this->deletePhotoFromFS($dish);
+      $entry->update($post);
+      return redirect()->to('/index');
     }
 
     /**

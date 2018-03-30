@@ -363,6 +363,20 @@ header nav ul li a:hover {
   right: 4px;
 }
 
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.admin-tools i {
+  padding: 5px;
+  /* border-radius: 50%; */
+  /* background-color: #22252c; */
+  color: white;
+}
+
 .entry-controlls i {
   background-color: #e14658;
   color: #FFF;

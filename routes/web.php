@@ -24,6 +24,8 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('/createEntry', 'EntriesController@create')->name('entry_create');
 Route::post('/storeEntry', 'EntriesController@store')->name('entry_store');
 Route::get('/entry/{id}', 'EntriesController@show')->name('entry_show');
+Route::get('/editEntry/{id}', 'EntriesController@edit')->name('entry_edit');
+Route::post('/updateEntry/{id}', 'EntriesController@update')->name('entry_update');
 // Route::get('/editEntry/{id}', 'EntriesController@edit')->name('entry_edit');
 // Route::post('/storeEntry', 'EntriesController@store')->name('entry_store');
 // Route::get('/deleteEntry/{id}', 'EntriesController@destroy')->name('destroy');

@@ -12,11 +12,17 @@
 
     </div>
 
-@foreach ($entries as $entry)
+@foreach ($entries->reverse() as $entry)
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12 entry">
       <a href="{{ route('entry_show', $entry->id)}}">
         <div class="thumbnail">
           <img src="{{ $entry->url }}" alt="Entry1">
+          @if(Auth::check() && Auth::user()->isAdmin())
+          <div class="top-left admin-tools">
+            <a href="{{ route('entry_edit', $entry->id) }}" role="button"><i class="fas fa-pencil-alt"></i></a>
+            <i class="fas fa-times"></i>
+          </div>
+          @endif
           <div class="bottom-left entry-date">{{ $entry->date }}</div>
           <div class="bottom-right entry-controlls">
             <i class="fas fa-share"></i>
