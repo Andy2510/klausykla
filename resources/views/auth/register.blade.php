@@ -7,7 +7,7 @@
       <h3>Register</h3>
     </div>
 
-    <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center reg-form">
+    <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center form">
 
       {!! Form::open(['url' => 'register']) !!}
 
@@ -46,7 +46,7 @@
         @endif
 
 
-      <button type="submit" class="submit-auth-btn uppercase bold push-right">Register</button>
+      <button type="submit" class="submit-btn uppercase bold push-right">Register</button>
     </div>
 
     <!-- <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">

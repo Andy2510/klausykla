@@ -16,7 +16,7 @@
     <div class="col lg-4-12 sm-4-12 md-4-12 xl-4-12 entry">
       <a href="{{ route('entry_show', $entry->id)}}">
         <div class="thumbnail">
-          <img src="{{ $entry->url }}" alt="Entry1">
+          <img src="{{ $entry->url }}" alt="{{ $entry->title }}">
           @if(Auth::check() && Auth::user()->isAdmin())
           <div class="top-left admin-tools">
             <a href="{{ route('entry_edit', $entry->id) }}" role="button"><i class="fas fa-pencil-alt"></i></a>
@@ -24,19 +24,20 @@
           </div>
           @endif
           <div class="bottom-left entry-date">{{ $entry->date }}</div>
-          <div class="bottom-right entry-controlls">
-            <i class="fas fa-share"></i>
-            <i class="fas fa-heart"></i>
+            <div class="bottom-right entry-controlls">
+              <i class="fas fa-share"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="entry-title bold text-center">
+            <h4>{{ $entry->title }}</h4>
+          </div>
+        </a>
+          <div class="entry-desc">
+            <h5>{{ $entry->description }}</h5>
           </div>
         </div>
-        <div class="entry-title bold text-center">
-          <h4>{{ $entry->title }}</h4>
-        </div>
-      </a>
-      <div class="entry-desc">
-        <h5>{{ $entry->description }}</h5>
-      </div>
-    </div>
+
 
 @endforeach
 

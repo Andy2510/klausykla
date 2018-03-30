@@ -1,4 +1,4 @@
-.submit-auth-btn {
+/* .submit-btn {
   padding: 15px;
   width: 200px;
   margin: 0 auto;
@@ -17,6 +17,11 @@
   margin-bottom: 20px;
 }
 
+.submit-btn:hover {
+  color: #e2dedb;
+  background-color: #e14658;
+} */
+
 .btn-forgot {
   padding: 5px;
   font-size: 10px;
@@ -29,7 +34,7 @@
   color: #e2dedb;
 }
 
-.reg-form-input {
+.form-input {
   font-size: 0.875em;
   height: 35px;
   padding: 0px 15px 0px 15px;
@@ -40,34 +45,34 @@
   border-bottom: solid 1px #22252c;
 }
 
-.reg-form-input:hover {
+.form-input:hover {
   background: white;
   color: #22252c;
 }
 
-.reg-form-input:visited {
+.form-input:visited {
   background-color: #C0B3A0;
 }
 
-.reg-form-input::placeholder {
+.form-input::placeholder {
   color: #3F3250;
 }
 
-.reg-form-input::placeholder:hover {
+.form-input::placeholder:hover {
   color: #3F3250;
 }
 
-.reg-form-label {
+.form-label {
   font-size: 15px;
   margin-top: 30px;
 }
 
-.reg-form .checkbox {
+.form .checkbox {
   display: inline;
   -webkit-appearance: checkbox;
 }
 
-.reg-form-textarea {
+.form-textarea {
   background: transparent;
   color: black;
   outline: none;
@@ -75,7 +80,7 @@
   border-bottom: solid 1px #22252c;
 }
 
-.reg-form-textarea:hover {
+.form-textarea:hover {
   background: white;
   color: #22252c;
 }

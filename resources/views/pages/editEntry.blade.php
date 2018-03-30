@@ -49,9 +49,9 @@
     </div>
 
     <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
-      <div class="entry-btns">
-        <button type="submit" class="submit-auth-btn uppercase bold push-right">Save</button>
-        <a href="{{ route('index') }}" class="submit-auth-btn bold uppercase">Back to main</a>
+      <div class="btns">
+        <button type="submit" class="save-btn uppercase bold push-right">Save</button>
+        <a href="{{ route('index') }}" class="back-btn bold uppercase">Back to main</a>
       </div>
     </div>
 

@@ -1,8 +1,8 @@
 /****** GLOBAL  ******/
 
 * {
+  font-family: 'Open Sans', sans-serif;
   font-family: 'Play', sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -104,7 +104,8 @@ button {
 
 button::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 button,
 html input[type="button"] {
@@ -201,12 +202,6 @@ td, th {
   font-weight: bold;
 }
 
-.edit-btn {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background: #C0B3A0;
-}
-
 #page-container {
   overflow: hidden;
 }
@@ -238,46 +233,6 @@ td, th {
 
 
 /*** BEGINNING OF HEADER  ***/
-/* header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-} */
-
-/* .navbar {
-  position: relative;
-  z-index: 10;
-}
-
-
-header nav ul {
-  list-style: none;
-  margin: 24px 2px 0 2px;
-  padding: 0;
-  float: left;
-}
-
-header nav ul li {
-  display: inline-block;
-}
-
-
-header nav ul li a {
-  padding: 7px 14px;
-  display: block;
-  color: #C0B3A0;
-  border: 2px solid transparent;
-  font-weight: bold;
-}
-
-header nav ul li a:hover {
-  border: #3F3250 2px solid;
-  font-weight: bold;
-}
-*/
-
 #intro {
   height: 50vh;
   background: url(../img/marshall.jpg) center center no-repeat;
@@ -394,10 +349,47 @@ header nav ul li a:hover {
   transition: all 0.3s ease 0s;
 }
 
+.entry-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.entry-desc {
+  margin-bottom: 50px;
+}
+
 .entry-title h4 {
   font-size: 1.75em;
   color: #22252c;
   margin: 0 auto;
+}
+
+.entry-img_int img {
+  display: inline-block;
+  max-width: 80%;
+  height: auto;
+}
+
+.entry-img_int {
+  margin-top: 50px;
+}
+
+.entry-date_int {
+  max-width: 90%;
+}
+
+.entry-date_int h6 {
+  color: #e14658;
+  margin: 15px auto;
+}
+
+.entry-desc_int {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.entry-desc_int h5 {
+  color: #3F3250;
 }
 
 .entry-desc h5 {
@@ -405,6 +397,51 @@ header nav ul li a:hover {
   margin: 0 auto;
   line-height: 120%;
   word-wrap: break-word;
+}
+
+.submit-btn,
+.back-btn,
+.edit-btn,
+.save-btn {
+  padding: 7px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  color: #22252c;
+  outline: none;
+  cursor: pointer;
+  border: solid 2px #e14658;
+  background-color: inherit;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.submit-btn:hover,
+.back-btn:hover,
+.edit-btn:hover,
+.save-btn:hover {
+  color: #e2dedb;
+  background-color: #e14658;
+}
+
+.edit-btn {
+  background: #0d93e8ad;
+  color: #f2f2f2;
+}
+
+.back-btn {
+  background: #C0B3A0;
+  color: #22252c;
+}
+
+.save-btn {
+  background: #3ab35c;
+  color: #22252c;
 }
 
 
