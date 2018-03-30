@@ -1,4 +1,5 @@
 @extends ('layout.default')
+@extends('includes.head')
 
 
 @section('content')
@@ -27,7 +28,10 @@
       </div>
 
       <div class="entry-btns">
-        <a href="{{ route('index') }}" class="back-btn bold uppercase">Back to main</a>
+        @if(Auth::check() && Auth::user()->isAdmin())
+          <a href="{{ route('entry_edit', $entry->id) }}" role="button" class="edit-btn bold uppercase">Edit</a>
+        @endif
+        <a href="{{ route('index') }}" class="btn bold uppercase">Back to main</a>
       </div>
 
 

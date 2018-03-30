@@ -27,6 +27,14 @@ class PhotoHelper
      * @param $photo
      */
 
+   public function deletePhotoFromFileSystem($entry)
+   {
+     $path = storage_path('app/' . $entry->imageUrl);
+     if (file_exists($path)){
+       unlink($path);
+     }
+   }
+
   protected function deleteOneFromFileSystem($photo)
   {
     $path = storage_path('app/' . $photo->file_name);
@@ -35,4 +43,5 @@ class PhotoHelper
         unlink($path);
     }
   }
+
 }

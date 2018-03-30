@@ -19,7 +19,7 @@
         @endif
 
         {!! Form::label('date', 'Entry Date', ['class' => 'reg-form-label']) !!}
-        {!! Form::date(old('date'), \Carbon\Carbon::now(), array('class' => 'reg-form-input')) !!}
+        {!! Form::date(old('date'), $entry->date, array('class' => 'reg-form-input', 'name' => 'date')) !!}
 
         {!! Form::label('description', 'Entry Description', ['class' => 'reg-form-label']) !!}
         {!! Form::textarea(old('description'), $entry->description, array('class' => 'reg-form-textarea', 'name' => 'description')) !!}

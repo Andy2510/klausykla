@@ -99,7 +99,7 @@ class EntriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $this->validator($request);
+      // $this->validator($request);
 
       $path = $request->file('imageUrl')->storePublicly('public/photos');
 
@@ -112,7 +112,7 @@ class EntriesController extends Controller
       ];
 
       $entry = Entry::findOrFail($id);
-      $this->deleteOneFromFileSystem($entry);
+      $this->photoHelper->deletePhotoFromFileSystem($entry);
       $entry->update($post);
       return redirect()->to('/index');
     }
@@ -128,14 +128,14 @@ class EntriesController extends Controller
         //
     }
 
-    protected function validator($data)
-    {
-        return $data->validate([
-            'title' => 'required|string|max:200',
-            'date' => 'required|date',
-            'description' => 'required|string|max:2000',
-            'trackUrl' => 'required|string',
-            'imageUrl' => 'required|image|mimes:jpeg,jpg,bmp,png|max:5128'
-          ]);
-    }
+    // protected function validator($data)
+    // {
+    //     return $data->validate([
+    //         'title' => 'required|string|max:200',
+    //         'date' => 'required|date',
+    //         'description' => 'required|string|max:2000',
+    //         'trackUrl' => 'required|string',
+    //         'imageUrl' => 'required|image|mimes:jpeg,jpg,bmp,png|max:5128'
+    //       ]);
+    // }
 }

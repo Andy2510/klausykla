@@ -201,6 +201,11 @@ td, th {
   font-weight: bold;
 }
 
+.edit-btn {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #C0B3A0;
+}
 
 #page-container {
   overflow: hidden;
