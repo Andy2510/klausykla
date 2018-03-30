@@ -20,7 +20,7 @@
           @if(Auth::check() && Auth::user()->isAdmin())
           <div class="top-left admin-tools">
             <a href="{{ route('entry_edit', $entry->id) }}" role="button"><i class="fas fa-pencil-alt"></i></a>
-            <i class="fas fa-times"></i>
+            <a href="{{ route('entry_destroy', $entry->id) }}" role="button"><i class="fas fa-times"></i></a>
           </div>
           @endif
           <div class="bottom-left entry-date">{{ $entry->date }}</div>

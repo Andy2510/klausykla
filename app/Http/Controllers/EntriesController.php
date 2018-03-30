@@ -125,7 +125,18 @@ class EntriesController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $entry = Entry::findOrFail($id);
+      $this->photoHelper->deletePhotoFromFileSystem($entry);
+      $entry->delete();
+      return redirect()->route('index');
+    }
+
+    public function deletePhotoFromFileSystem($entry) {
+      $path = storage_path('app/' . $entry->imageUrl);
+
+      if (file_exists($path)){
+          unlink($path);
+      }
     }
 
     // protected function validator($data)
