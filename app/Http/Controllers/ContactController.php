@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-// use App\Http\Requests\ContactFormRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\KlausyklaMail;
+use App\Http\Requests\ContactFormRequest;
 
 
 class ContactController extends Controller
@@ -13,17 +15,16 @@ class ContactController extends Controller
       return view('pages.contactStore');
   }
 
-  public function store(Request $request)
+  public function store(ContactFormRequest $request)
   {
     $contact = [];
-
 
     $contact['name'] = $request->get('name');
     $contact['email'] = $request->get('email');
     $contact['message'] = $request->get('message');
 
 
-    // Mail delivery logic goes here
+    Mail::to(config('mail.support.email'))->send(new KlausyklaMail($contact));
 
     flash('Your message has been sent!')->success();
 
