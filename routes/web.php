@@ -28,7 +28,6 @@ Route::get('/editEntry/{id}', 'EntriesController@edit')->name('entry_edit');
 Route::post('/updateEntry/{id}', 'EntriesController@update')->name('entry_update');
 Route::get('/deleteEntry/{id}', 'EntriesController@destroy')->name('entry_destroy');
 
-// Route::get('/editEntry/{id}', 'EntriesController@edit')->name('entry_edit');
-// Route::post('/storeEntry', 'EntriesController@store')->name('entry_store');
-// Route::get('/deleteEntry/{id}', 'EntriesController@destroy')->name('destroy');
-// Route::post('/updateEntry/{id}', 'EntriesController@update')->name('entry_update');
+// CONTACT FORM ROUTES
+Route::get('index#form', 'ContactController@create')->name('contact_create');
+Route::post('index#form', 'ContactController@store')->name('contact_store');
