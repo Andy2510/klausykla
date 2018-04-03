@@ -19,9 +19,9 @@
 
 
 <!-- Custom styles for this template -->
-<link href="{{ asset('contents/css/responsive.css') }}" rel="stylesheet" type="text/css">
-<link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('contents/css/style.css') }}" rel="stylesheet" type="text/css" >
+<link href="{{ asset('contents/css/grid.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('contents/css/responsive.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('contents/css/navigation.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('contents/css/formstyle.css') }}" rel="stylesheet" type="text/css">
 

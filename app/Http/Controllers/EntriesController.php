@@ -22,7 +22,7 @@ class EntriesController extends Controller
      */
     public function index()
     {
-      $entries = Entry::get();
+      $entries = Entry::latest()->paginate(3);
 
        return view('pages.index', [
            'entries' => $entries
@@ -100,7 +100,7 @@ class EntriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-      // $this->validator($request);
+      $this->validator($request);
 
       $path = $request->file('imageUrl')->storePublicly('public/photos');
 
@@ -145,7 +145,7 @@ class EntriesController extends Controller
         return $data->validate([
             'title' => 'required|string|max:200',
             'date' => 'required|date',
-            'description' => 'required|string|max:2000',
+            'description' => 'required|string|max:5000',
             'trackUrl' => 'required|string',
             'imageUrl' => 'required|image|mimes:jpeg,jpg,bmp,png|max:5128'
           ]);

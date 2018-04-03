@@ -10,27 +10,27 @@
 
       {!! Form::open(['route' => ['entry_update', $entry->id], 'files' => true]) !!}
 
-      {!! Form::label('title', 'Entry Title', ['class' => 'reg-form-label']) !!}
-      {!! Form::text(old('title'), $entry->title, array('class' => 'reg-form-input', 'name' => 'title')) !!}
+      {!! Form::label('title', 'Entry Title', ['class' => 'form-label']) !!}
+      {!! Form::text(old('title'), $entry->title, array('class' => 'form-input', 'name' => 'title')) !!}
         @if ($errors->has('title'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('title') }}</p>
         </span>
         @endif
 
-        {!! Form::label('date', 'Entry Date', ['class' => 'reg-form-label']) !!}
-        {!! Form::date(old('date'), $entry->date, array('class' => 'reg-form-input', 'name' => 'date')) !!}
+        {!! Form::label('date', 'Entry Date', ['class' => 'form-label']) !!}
+        {!! Form::date(old('date'), $entry->date, array('class' => 'form-input', 'name' => 'date')) !!}
 
-        {!! Form::label('description', 'Entry Description', ['class' => 'reg-form-label']) !!}
-        {!! Form::textarea(old('description'), $entry->description, array('class' => 'reg-form-textarea', 'name' => 'description')) !!}
+        {!! Form::label('description', 'Entry Description', ['class' => 'form-label']) !!}
+        {!! Form::textarea(old('description'), $entry->description, array('class' => 'form-textarea', 'name' => 'description')) !!}
         @if ($errors->has('description'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('description') }}</p>
         </span>
         @endif
 
-        {!! Form::label('trackUrl', 'Track URL', ['class' => 'reg-form-label']) !!}
-        {!! Form::text(old('trackUrl'), $entry->trackUrl, array('class' => 'reg-form-input', 'name' => 'trackUrl')) !!}
+        {!! Form::label('trackUrl', 'Track URL', ['class' => 'form-label']) !!}
+        {!! Form::text(old('trackUrl'), $entry->trackUrl, array('class' => 'form-input', 'name' => 'trackUrl')) !!}
           @if ($errors->has('trackUrl'))
           <span class="invalid-feedback">
             <p class="validation-p text-center bold">{{ $errors->first('trackUrl') }}</p>
@@ -38,8 +38,8 @@
           @endif
 
 
-        {!! Form::label('imageUrl', 'Entry Photo', ['class' => 'reg-form-label']) !!}
-        {!! Form::file('imageUrl', ['class' => 'reg-form-input']) !!}
+        {!! Form::label('imageUrl', 'Entry Photo', ['class' => 'form-label']) !!}
+        {!! Form::file('imageUrl', ['class' => 'form-input']) !!}
         @if ($errors->has('imageUrl'))
         <span class="invalid-feedback">
           <p class="validation-p text-center bold">{{ $errors->first('imageUrl') }}</p>

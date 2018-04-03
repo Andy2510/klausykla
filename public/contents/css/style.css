@@ -237,6 +237,7 @@ td, th {
   height: 50vh;
   background: url(../img/marshall.jpg) center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #intro .intro__content {
@@ -442,6 +443,36 @@ td, th {
 .save-btn {
   background: #3ab35c;
   color: #22252c;
+}
+
+.pagination {
+  /* display: inline-block; */
+  list-style-type: none;
+}
+
+.page-link {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #C0B3A0;
+  margin: 0 4px;
+}
+
+
+.active .page-link {
+  background-color: #3F3250;
+  color: white;
+  border: 1px solid #3F3250;
+}
+
+.page-link:hover:not(.active) {
+  background-color: #C0B3A0;
+}
+
+.page-item {
+  display: inline-block;
 }
 
 

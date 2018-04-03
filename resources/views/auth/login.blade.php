@@ -41,7 +41,7 @@
     </div>
 
     <div class="col xs-12-12 md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
-      <a class="submit-auth-btn btn-forgot uppercase bold" href="{{ route('password.request') }}">
+      <a class="submit-btn btn-forgot uppercase bold" href="{{ route('password.request') }}">
           {{ __('Forgot Your Password?') }}
       </a>
     </div>
