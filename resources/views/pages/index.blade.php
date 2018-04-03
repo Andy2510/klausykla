@@ -57,7 +57,9 @@
         </div>
 
         <div class="col md-6-12 lg-6-12 sm-6-12 md-6-12 xl-6-12 xxl-6-12 text-center">
-          <form id="form" method="POST" action="{{ route('contact_create') }}" enctype="multipart/form-data">
+          <form id="form" method="POST" action="{{ route('contact_store') }}" enctype="multipart/form-data">
+            {{ csrf_field() }}
+
             @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -67,9 +69,9 @@
                 </ul>
             </div>
             @endif
-            <input id="name" type="text" placeholder="NAME">
-            <input id="email" type="text" placeholder="E-MAIL">
-            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+            <input id="name" type="text" name="name" placeholder="NAME">
+            <input id="email" type="text" name="email" placeholder="E-MAIL">
+            <textarea id="message" type="text" name="message" placeholder="MESSAGE"></textarea>
             <input id="submit" type="submit" value="Submit" class="bold uppercase">
           </form>
         </div>

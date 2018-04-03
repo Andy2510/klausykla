@@ -29,5 +29,5 @@ Route::post('/updateEntry/{id}', 'EntriesController@update')->name('entry_update
 Route::get('/deleteEntry/{id}', 'EntriesController@destroy')->name('entry_destroy');
 
 // CONTACT FORM ROUTES
-Route::get('index#form', 'ContactController@create')->name('contact_create');
-Route::post('index#form', 'ContactController@store')->name('contact_store');
+Route::get('/contactStore', 'ContactController@create')->name('contact_create');
+Route::post('/contactStore', 'ContactController@store')->name('contact_store');
