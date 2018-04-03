@@ -693,4 +693,9 @@ footer .fab:hover {
   transition: opacity 0.5s linear;
 }
 
+footer .fas {
+  color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
 /*** ENDING OF FOOTER ***/

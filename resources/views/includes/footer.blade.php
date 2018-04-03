@@ -1,6 +1,7 @@
 <div class="grid">
   <div class="row">
 
+
     <div class="col md-8-12 sm-8-12 md-8-12 xl-8-12 xxl-8-12 text-center">
       <h5>This blog does not in any means attempt to infringe copyright law. It is rather created for sharing and enjoying music with like-minded people.</h5>
     </div>
@@ -13,13 +14,14 @@
     </div>
   </div>
 
-
-
       <div class="col xs-12-12">
         <div class="legal text-center">
           <p>Copyright @ 2018, All Rights Reserved</p>
         </div>
       </div>
 
+      <div class="col md-12-12 sm-12-12 md-12-12 xl-12-12 xxl-12-12 text-center">
+        <a href="#navbar" title="To Top"><i class="fas fa-chevron-up"></i></a>
+      </div>
 
 </div>
