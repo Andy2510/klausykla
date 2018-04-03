@@ -22,7 +22,6 @@
                       <a href='#'><i class="fab fa-odnoklassniki"></i> Admin Panel</a>
                       <ul class="">
                         <li><a href='{{ route('entry_create') }}'>Create New Entry</a></li>
-                        <li><a href='#'>Edit Entries</a></li>
                         <li><a href='#'>Userlist</a></li>
                       </ul>
                     </li>

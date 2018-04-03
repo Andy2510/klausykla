@@ -1,24 +1,4 @@
 $(document).ready(function() {
-
-  $("#navbar a, footer a[href='#navbar']").on('click', function(event){
-
-
-    event.preventDefault(); // stops page from reloading
-
-    var hash = this.hash;
-
-    // smooth scroll. begin.
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-    // smooth scroll. end.
-
-    window.location.hash = hash;
-    });
-  });
-})
-
-$(document).ready(function() {
 (function($) {
 
   $.fn.menumaker = function(options) {
@@ -91,3 +71,23 @@ $("#navbar").menumaker({
 });
 
 });
+
+$(document).ready(function() {
+
+  $("a[href='#blog'], a[href='#suggest'], footer a[href='#navbar']").on('click', function(event){
+
+
+    event.preventDefault(); // stops page from reloading
+
+    var hash = this.hash;
+
+    // smooth scroll. begin.
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+    // smooth scroll. end.
+
+    window.location.hash = hash;
+    });
+  });
+})
